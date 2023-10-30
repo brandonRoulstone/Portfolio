@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --black: black;
+    --bg-image: url('https://i.postimg.cc/zBqkDfsj/world-wide-web-7109276-640.webp');
+    --transparentBlack1: rgba(124, 124, 124, 0.124);
+    --transparentBlack2: rgba(0, 0, 0, 0.593);
+    --babyBlue: rgb(0, 132, 255);
+    --darkBlue:rgb(3, 3, 74);
+}
+
+body{
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+/* links */
+.icon-link{
+    background-color: var(--darkBlue);
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.icon-link:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotateX(360deg);
+}
+
+
+
+/* Nav features */
+.nav-container{
+    transform: translateY(200px);
+}
+
+.nav-icon{
+    margin-top: 40px;
+    background-color: var(--babyBlue);
+    height: 40px;
+    text-align: end;
+    padding: 10px;
+    transform: translateX(-98%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#HomePage:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateX(-93%);
+}
+
+#AboutPage:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateX(-93%);
+}
+
+#ContactPage:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateX(-93%);
+}
+
+#ProjectsPage:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateX(-93%);
+}
