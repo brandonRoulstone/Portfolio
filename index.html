@@ -11,7 +11,7 @@
   <body>
     <div id="topHomePage">
           <!-- Social meadia links -->
-          <ul class="d-flex justify-content-start list-unstyled justify-content-evenly" id="LogoLinks">
+          <!-- <ul class="d-flex justify-content-start list-unstyled justify-content-evenly" id="LogoLinks">
           
             <li class="icon-link">
               <a href=""><i class="fa-brands fa-github fa-2xl" style="color: #ededed;"></i></a>
@@ -25,14 +25,40 @@
             <li class="icon-link">
               <a href=""><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i></a>
             </li>
-            <!-- logo -->
+            
             <div class=" display-6 justify-content-end text-white" id="logo">Brandon Roulstone</div>
 
-        </ul>
+        </ul> -->
+        
+        <div class="d-flex justify-content-center" id="greeting">
 
+          <div class="icons">
+            <li class="icon-link-side">
+              <a href=""><i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i></a>
+            </li>
+            <li class="icon-link-side">
+              <a href=""><i class="fa-brands fa-facebook-f fa-2xl" style="color: #000000;"></i></a>
+            </li>
+            <li class="icon-link-side">
+              <a href=""><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #000000;"></i></a>
+            </li>
+            <li class="icon-link-side">
+              <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #000000;"></i></a>
+            </li>
+          </div>
 
-        <!-- Heading -->
-        <div class="d-flex justify-content-center display-1" id="greeting">Hello I'm Brandon</div>
+            <ul class="list-lst">
+              <li><h1>Hello I'm Brandon....</h1></li>
+              <li class="fs-2">Student at Life Choices</li>
+              <li class="fs-2">Aspiring developer</li>
+              <div class="d-flex justify-content-center">
+                <a href="#aboutPage"><button class="btn-about">More about me</button></a>
+              </div>
+            </ul>
+          <div class="img-intro">
+            <img src="https://i.postimg.cc/26wyDL97/20231009-135619.jpg" alt="" class="img-img">
+          </div>
+        </div>
         
         <!-- Navbar -->
         <nav>
@@ -40,22 +66,169 @@
           <ul class="nav-container">
 
             <li class="nav-icon" id="HomePage">
-              <a href="#topHomePage" class=""><i class="fa-solid fa-house fa-2xl" style="color: #000000;"></i></a>
+              <a href="#topHomePage"><i class="fa-solid fa-house fa-2xl" style="color: #000000;" id="iconOne"></i></a>
             </li>
             <li class="nav-icon" id="AboutPage">
-              <a href="#aboutPage" class=""><i class="fa-solid fa-circle-info fa-2xl" style="color: #000000;"></i></a>
+              <a href="#aboutPage"><i class="fa-solid fa-circle-info fa-2xl" style="color: #000000;" id="iconTwo"></i></a>
             </li>
             <li class="nav-icon" id="ContactPage">
-              <a href="" class=""><i class="fa-solid fa-phone fa-2xl" style="color: #000000;"></i></a>
+              <a href="#testimonials"><i class="fa-solid fa-phone fa-2xl" style="color: #000000;" id="iconThree"></i></a>
             </li>
             <li class="nav-icon" id="ProjectsPage">
-              <a href="" class=""><i class="fa-solid fa-file-pen fa-2xl" style="color: #000000;"></i></a>
+              <a href=""><i class="fa-solid fa-file-pen fa-2xl" style="color: #000000;" id="iconFour"></i></a>
             </li>
           </ul>
 
         </nav>
     </div>
+
     <div id="aboutPage">
+
+      <div class="container col-xxl-8 px-4 py-5">
+
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+          <div class="col-10 col-sm-8 col-lg-6">
+
+            <img src="https://i.postimg.cc/26wyDL97/20231009-135619.jpg" class="d-block mx-lg-auto img-fluid border rounded-5" alt="Img_Brandon" width="300" height="400" loading="lazy">
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <h1 class="display-4 fw-bold text-white lh-1 mb-3 text-center">About Me</h1>
+
+            <p class="lead text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, nostrum delectus perferendis ad molestiae doloremque, neque recusandae assumenda nisi voluptas soluta. Nihil consequuntur sed iste consequatur aliquid pariatur illo doloribus.</p>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+
+              <a href="#programmingExp"><button class="btn-about">Experience</button></a>
+              <a href="#Education"><button class="btn-about">Education</button></a>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div id="programmingExp">
+
+        <h2 class="text-center text-white">Programming exp</h2>
+
+        <div class="d-flex justify-content-center">
+  
+          <div class="rating">
+  
+            <input value="5" name="rate" id="star5" type="radio">
+  
+            <label title="text" for="star5"></label>
+  
+            <input value="4" name="rate" id="star4" type="radio">
+  
+            <label title="text" for="star4"></label>
+  
+            <input value="3" name="rate" id="star3" type="radio">
+  
+            <label title="text" for="star3"></label>
+  
+            <input value="2" name="rate" id="star2" type="radio">
+  
+            <label title="text" for="star2"></label>
+  
+            <input value="1" name="rate" id="star1" type="radio">
+  
+            <label title="text" for="star1"></label>
+  
+          </div>
+  
+        </div>
+  
+        <div class="d-flex justify-content-center">
+
+          <div class="box">
+
+            <img src="https://i.postimg.cc/kGhgvqPd/logo-2582748-1280-html.webp" alt="" class="icon-img">
+
+            <img src="https://i.postimg.cc/Xqnsk6cx/logo-2582747-640-css.png" alt="" class="icon-img">
+
+            <img src="https://i.postimg.cc/B60pJfys/images-js.png" alt="" class="icon-img">
+
+            <img src="https://i.postimg.cc/qvK2qZ27/images-reactjs.png" alt="" class="icon-img">
+
+          </div>
+
+        </div>
+
+      </div>
+      <div id="Education">
+
+        <div class="col-lg-8 mx-auto p-4 py-md-5">
+          <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+              <i class="fa-solid fa-graduation-cap fa-2xl" style="color: #ffffff;"></i>
+              <span class="fs-4">Education</span>
+            </a>
+          </header>
+        
+          <main>
+            <h1 class="text-white">Education</h1>
+            <p class="fs-5 col-md-8 text-white">Quickly and easily get started with Bootstrap's compiled, production-ready files with this barebones example featuring some basic HTML and helpful links. Download all our examples to get started.</p>
+        
+            <hr class="col-3 col-md-2 mb-5">
+        
+            <div class="row g-5">
+              <div class="col-md-6">
+                <h2 class="text-white">Starter projects</h2>
+                <p class="text-white">Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+                <ul class="list-unstyled ps-0">
+                  <li class="text-white">
+                    Bootstrap Webpack starter
+                  </li>
+                  <li class="text-white">
+                    Bootstrap Webpack starter
+                  </li>
+                  <li class="text-white">
+                    Bootstrap Webpack starter
+                  </li>
+                  <li class="text-white">
+                    Bootstrap Webpack starter
+                  </li>
+                </ul>
+              </div>
+        
+              <div class="col-md-6">
+                <h2 class="text-white">Guides</h2>
+                <p class="text-white">Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+                <ul class="list-unstyled ps-0">
+                  <li class="text-white">
+                      Bootstrap quick start guide
+                  </li>
+                  <li class="text-white">
+                      Bootstrap Webpack guide
+                  </li>
+                  <li class="text-white">
+                      Bootstrap Parcel guide
+                  </li>
+                  <li>
+                      Bootstrap Vite guide
+                  </li>
+                  <li class="text-white">
+                      Contributing to Bootstrap
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+          <footer class="pt-5 my-5 text-white border-top">
+            Created by the Bootstrap team &middot; &copy; 2023
+          </footer>
+        </div>
+      </div>
+
+    </div>
+    <div id="testimonials">
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
