@@ -19,11 +19,21 @@
     --NavColor: rgb(0, 110, 255);
 }
 
-body{
-    /* background-image: var(--bg-image);
+/* body{
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; */
+    min-height: 100vh;
+} */
+
+#topHomePage::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--transparentBlack1), var(--transparentBlack2));
+    position: absolute;
 }
 
 #topHomePage{
