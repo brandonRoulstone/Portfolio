@@ -8,7 +8,10 @@
     --bg-image: url('https://i.postimg.cc/zBqkDfsj/world-wide-web-7109276-640.webp');
     --transparentBlack1: rgba(124, 124, 124, 0.124);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
-    --babyBlue: rgb(0, 132, 255);
+    --transparentWhite: rgba(255, 255, 255, 0.228);
+    --logoBg: rgba(21, 45, 227, 0.816);
+    --logoGradient: rgba(175, 196, 220, 0.496);
+    --babyBlue: rgba(0, 132, 255, 0.421);
     --darkBlue:rgb(3, 3, 74);
 }
 
@@ -20,18 +23,43 @@ body{
 }
 
 
+/* logo */
+#logo{
+    /* background-color: var(--transparentWhite); */
+    background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
+    color: var(--babyBlue);
+    border-radius: 15px;
+    padding: 4px;
+    margin: 5px;
+}
+
+#logo:hover{
+    transition: 1s;
+    transform: scaleX(90%);
+    cursor: pointer;
+}
+
+/* logo border bottom */
+#LogoLinks{
+    border-bottom: 1px solid var(--logoGradient);
+}
+
 
 /* links */
 .icon-link{
-    background-color: var(--darkBlue);
-    padding: 5px;
+    background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
     text-align: center;
     border-radius: 50%;
 }
 
 .icon-link:hover{
     transition: 0.5s ease-in-out;
-    transform: rotateX(360deg);
+    transform: rotateY(360deg);
 }
 
 
