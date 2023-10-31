@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
     --black: black;
     --white: white;
     --bg-image: url('https://i.postimg.cc/zBqkDfsj/world-wide-web-7109276-640.webp');
-    --transparentBlack1: rgba(124, 124, 124, 0.124);
+    --transparentBlack1: rgba(0, 0, 0, 0.48);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
     --transparentWhite: rgba(255, 255, 255, 0.228);
     --logoBg: rgba(21, 45, 227, 0.816);
@@ -19,6 +20,23 @@
 }
 
 body{
+    /* background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; */
+}
+
+#topHomePage{
+    background-image: url('https://i.postimg.cc/Jn2KthTw/Background-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#aboutPage{
+    min-height: 100vh;
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,9 +44,9 @@ body{
 }
 
 
+
 /* logo */
 #logo{
-    /* background-color: var(--transparentWhite); */
     background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
     color: var(--babyBlue);
     border-radius: 15px;
@@ -45,6 +63,9 @@ body{
 /* logo border bottom */
 #LogoLinks{
     border-bottom: 1px solid var(--logoGradient);
+    position: fixed;
+    width: 100%;
+    background-color: var(--transparentBlack1);
 }
 
 
@@ -100,9 +121,7 @@ body{
 /* Nav features */
 .nav-container{
     transform: translateY(200px);
-    position: sticky;
-    /* background-color: aliceblue;
-    margin-right: 900px; */
+    position: fixed;
 }
 
 .nav-icon{
@@ -118,7 +137,7 @@ body{
 
 #HomePage:hover{
     transition: 0.5s ease-in-out;
-    transform: translateX(-96%);
+    transform: translateX(-60%);
 }
 
 #AboutPage{
@@ -127,7 +146,7 @@ body{
 
 #AboutPage:hover{
     transition: 0.5s ease-in-out;
-    transform: translateX(-96%);
+    transform: translateX(-60%);
 }
 
 #ContactPage{
@@ -136,7 +155,7 @@ body{
 
 #ContactPage:hover{
     transition: 0.5s ease-in-out;
-    transform: translateX(-96%);
+    transform: translateX(-60%);
 }
 
 #ProjectsPage{
@@ -145,5 +164,5 @@ body{
 
 #ProjectsPage:hover{
     transition: 0.5s ease-in-out;
-    transform: translateX(-96%);
+    transform: translateX(-60%);
 }
