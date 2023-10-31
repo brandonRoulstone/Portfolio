@@ -5,6 +5,12 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-image: url('https://i.postimg.cc/2509mFMT/coffee-839233-640.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 :root{
     --black: black;
     --white: white;
@@ -19,27 +25,7 @@
     --NavColor: rgb(0, 110, 255);
 }
 
-/* body{
-    background-image: var(--bg-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-} */
-
-#topHomePage::before {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(var(--transparentBlack1), var(--transparentBlack2));
-    position: absolute;
-}
-
 #topHomePage{
-    background-image: url('https://i.postimg.cc/Jn2KthTw/Background-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 100vh;
     position: relative;
     width: 100%;
@@ -47,37 +33,7 @@
 
 #aboutPage{
     min-height: 100vh;
-    background-image: var(--bg-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
 }
-
-
-
-/* logo */
-#logo{
-    background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
-    color: var(--babyBlue);
-    border-radius: 15px;
-    padding: 4px;
-    margin: 5px;
-}
-
-#logo:hover{
-    transition: 1s;
-    transform: scaleX(90%);
-    cursor: pointer;
-}
-
-/* logo border bottom */
-#LogoLinks{
-    border-bottom: 1px solid var(--logoGradient);
-    position: fixed;
-    width: 100%;
-    background-color: var(--transparentBlack1);
-}
-
 
 /* links */
 .icon-link{
@@ -96,83 +52,164 @@
     transform: rotateY(360deg);
 }
 
-
-@keyframes popup {
-    0% {
-        transform: translateY(100px);
-    }
-    25% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(100px);
-    }
-    75% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(100px);
-    }
+.icons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
+.icon-link-side{
+    background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 6px;
+    height: 35px;
+    list-style: none;
+}
 
+.icon-link-side:hover{
+    transition: 1s ease-in-out;
+    transform: rotateY(360deg);
+    background: radial-gradient(circle, var(--logoBg) 10%,  var(--darkBlue) 100%, var(--logoBg) 30%);;
+}
+/* end of links */
+
+
+/* start ofHome page */
 #greeting{
-    transform: translateY(100px);
+    transform: translateY(90px);
     color: var(--white);
     position: relative;
-    animation-name: popup;
-    animation-duration: 1s;
-    animation-delay: 0.8s;
-    animation-iteration-count: 1;
     transition: 1s ease-in-out;
 }
+
+.list-lst{
+    margin-right: 10px;
+    list-style: none;
+}
+
+.img-img{
+    height: 400px;
+    width: 375px;
+    border-radius: 50%;
+    border: 5px solid var(--logoGradient);
+}
+
+.btn-about{
+    width: 150px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: radial-gradient(circle, var(--logoBg) 50%,  var(--logoGradient) 100%);
+    margin-right: 70px;
+}
+
+.btn-about:hover{
+    color: var(--white);
+    background: radial-gradient(circle, var(--logoBg) 10%,  var(--darkBlue) 100%, var(--logoBg) 30%);
+}
+/* End of Home page */
 
 
 /* Nav features */
 .nav-container{
-    transform: translateY(200px);
+    transform: translateY(-210px);
     position: fixed;
 }
 
 .nav-icon{
-    background-color: var(--NavColor);
-    height: 40px;
+    background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
+    height: 90px;
     text-align: end;
     padding: 10px;
     transform: translateX(-98%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 20px;
+}
+
+#iconOne, #iconTwo, #iconThree, #iconFour{
+    transform: translateY(20px);
+    padding-left: 15px;
 }
 
 
 #HomePage:hover{
-    transition: 0.5s ease-in-out;
-    transform: translateX(-60%);
+    transition: 0.2s ease-in-out;
+    transform: translateX(-55%);
 }
 
 #AboutPage{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #AboutPage:hover{
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     transform: translateX(-60%);
 }
 
 #ContactPage{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #ContactPage:hover{
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     transform: translateX(-60%);
 }
 
 #ProjectsPage{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 #ProjectsPage:hover{
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     transform: translateX(-60%);
 }
+/* End of Nav Features */
+
+
+/* start of about page */
+
+.box{
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100px;
+    width: 500px;
+    background: radial-gradient(circle, var(--logoBg) 50%,  var(--logoGradient) 100%);
+}
+
+.icon-img{
+    height: 60px;
+    margin: 20px;
+}
+
+.icon-img:hover{
+    transition: 1s;
+    transform: rotateZ(360deg);
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ff9e0b;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+
+  /* education section */
+
+
+  /* End of about page */
+  
+
+
+  /* Start of contact page */
+  /* End of contact page */
+  
