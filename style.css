@@ -17,9 +17,9 @@ body{
     --bg-image: url('https://i.postimg.cc/zBqkDfsj/world-wide-web-7109276-640.webp');
     --transparentBlack1: rgba(0, 0, 0, 0.48);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
-    --transparentWhite: rgba(255, 255, 255, 0.228);
+    --transparentWhite: rgba(255, 255, 255, 0.07);
     --logoBg: rgba(21, 45, 227, 0.816);
-    --logoGradient: rgba(175, 196, 220, 0.496);
+    --logoGradient: rgba(170, 205, 246, 0.496);
     --babyBlue: rgba(0, 132, 255, 0.421);
     --darkBlue:rgb(3, 3, 74);
     --NavColor: rgb(0, 110, 255);
@@ -114,6 +114,7 @@ body{
 .nav-container{
     transform: translateY(-210px);
     position: fixed;
+    perspective: 1000px;
 }
 
 .nav-icon{
@@ -170,11 +171,10 @@ body{
 .box{
     display: flex;
     justify-content: center;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     height: 100px;
     width: 500px;
-    background: radial-gradient(circle, var(--logoBg) 50%,  var(--logoGradient) 100%);
+    background: radial-gradient(circle, var(--logoGradient) 50%,  var(--transparentWhite) 100%);
 }
 
 .icon-img{
@@ -202,8 +202,19 @@ body{
   .rating:not(:checked) > label:before {
     content: '★';
   }
+  
 
-  /* education section */
+  /* testimonials section */
+  .intro{
+    display: flex;
+    justify-content: center;
+  }
+
+  .h2-txt{
+    margin-right: 150px;
+    color: var(--white);
+  }
+
 
 
   /* End of about page */
@@ -212,4 +223,3 @@ body{
 
   /* Start of contact page */
   /* End of contact page */
-  
