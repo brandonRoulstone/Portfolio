@@ -224,8 +224,8 @@ body{
   }
 
   .h2-txt{
-    margin-right: 150px;
     color: var(--white);
+    font-size: 60px;
   }
 
   #IconSocialOne, #IconSocialTwo, #IconSocialThree, #IconSocialFour{
@@ -311,12 +311,54 @@ body{
   .btn-post:hover{
     background: var(--BnW);
   }
-  
+  /* end of testimonial page */
 
+  /* Start of projects page */
+  #myProjects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--logoGradient);
+  }
 
+  .project-container{
+    margin-left: 65px;
+    background-color: var(--transparentWhite);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 20px;
+  }
 
-  /* End of about page */
-  
+  .image{
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-sc{
+    background-color: var(--black);
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .btn-view{
+    width: 100px;
+    height: 45px;
+    margin: 20px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  .btn-view:hover{
+    transition: 0.9s ease-in-out;
+    color: var(--black);
+    text-shadow: 6px 5px var(--transparentBlack2);
+    font-size: 17px;
+    box-shadow: 10px 0px 10px 10px rgba(41, 40, 40, 0.514);
+    transform: rotateY(40deg);
+    background: radial-gradient(circle, var(--logoGradient) 50%,  var(--transparentWhite) 100%);
+  }
+  /* End of projects page */
 
 
   /* Start of contact page */
