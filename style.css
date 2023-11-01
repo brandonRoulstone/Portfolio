@@ -6,15 +6,17 @@
 }
 
 body{
-    background-image: url('https://i.postimg.cc/2509mFMT/coffee-839233-640.jpg');
+    background-image: var(--bg-image);
     background-size: cover;
     background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    image-resolution: 1000px;
 }
 
 :root{
     --black: black;
     --white: white;
-    --bg-image: url('https://i.postimg.cc/zBqkDfsj/world-wide-web-7109276-640.webp');
+    --bg-image: url('https://i.postimg.cc/2509mFMT/coffee-839233-640.jpg');
     --transparentBlack1: rgba(0, 0, 0, 0.48);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
     --transparentWhite: rgba(255, 255, 255, 0.07);
@@ -23,6 +25,7 @@ body{
     --babyBlue: rgba(0, 132, 255, 0.421);
     --darkBlue:rgb(3, 3, 74);
     --NavColor: rgb(0, 110, 255);
+    --BnW:radial-gradient(circle, white  0%,  black 100%);
 }
 
 #topHomePage{
@@ -205,6 +208,16 @@ body{
   
 
   /* testimonials section */
+
+  #testimonials{
+    /* background-image: var(--bg-image);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    min-height: 50vh;
+    max-width: 100%;
+    /* image-rendering: optimizeQuality;
+    image-resolution: 1000px; */
+  }
   .intro{
     display: flex;
     justify-content: center;
@@ -214,6 +227,91 @@ body{
     margin-right: 150px;
     color: var(--white);
   }
+
+  #IconSocialOne, #IconSocialTwo, #IconSocialThree, #IconSocialFour{
+    background-color: var(--white);
+    height: 30px;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+ 
+  #IconSocialOne:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  #IconSocialTwo:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  #IconSocialThree:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  #IconSocialFour:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  .create-testimonial{
+    width: 275px;
+    border-radius: 30px;
+  }
+  .create-testimonial:hover{
+    background: var(--BnW);
+  }
+
+  #addIconSocialOne, #addIconSocialTwo, #addIconSocialThree, #addIconSocialFour{
+    background-color: var(--white);
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  #addIconSocialOne:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+  #addIconSocialTwo:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+  #addIconSocialThree:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+  #addIconSocialFour:hover{
+    background: var(--BnW);
+    transform: rotateY(360deg);
+    transition: 1s;
+  }
+
+  .btn-post{
+    margin-top: 10px;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: var(--white);
+    border: none;
+    color: var(--black);
+  }
+
+  .btn-post:hover{
+    background: var(--BnW);
+  }
+  
 
 
 
