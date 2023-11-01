@@ -19,13 +19,14 @@ body{
     --bg-image: url('https://i.postimg.cc/2509mFMT/coffee-839233-640.jpg');
     --transparentBlack1: rgba(0, 0, 0, 0.48);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
-    --transparentWhite: rgba(255, 255, 255, 0.07);
+    --transparentWhite: rgba(255, 255, 255, 0.147);
     --logoBg: rgba(21, 45, 227, 0.816);
     --logoGradient: rgba(170, 205, 246, 0.496);
     --babyBlue: rgba(0, 132, 255, 0.421);
     --darkBlue:rgb(3, 3, 74);
     --NavColor: rgb(0, 110, 255);
     --BnW:radial-gradient(circle, white  0%,  black 100%);
+    --ProjectsBgImg: url('https://i.postimg.cc/FFG4N1mZ/holes-7895625-640.jpg');
 }
 
 #topHomePage{
@@ -123,15 +124,18 @@ body{
 .nav-icon{
     background: radial-gradient(circle, var(--logoBg) 0%,  var(--logoGradient) 100%);
     height: 90px;
+    width: 100%;
     text-align: end;
     padding: 10px;
     transform: translateX(-98%);
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #iconOne, #iconTwo, #iconThree, #iconFour{
     transform: translateY(20px);
     padding-left: 15px;
+    margin-left: 30px;
 }
 
 
@@ -317,7 +321,9 @@ body{
   #myProjects{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--logoGradient);
+    background-image: var(--ProjectsBgImg);
+    /* background-repeat: no-repeat;
+    background-size: contain; */
   }
 
   .project-container{
