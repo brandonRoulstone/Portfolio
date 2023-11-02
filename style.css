@@ -4,10 +4,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     scroll-behavior: smooth;
 }
-
+/* 
 body{
 
-}
+} */
 
 :root{
     --black: black;
@@ -25,7 +25,14 @@ body{
     --testimonials_bgImg: url('https://i.postimg.cc/Tw1qrVq3/istockphoto-1273852653-612x612.jpg');
     --ProjectsBgImg: url('https://i.postimg.cc/FFG4N1mZ/holes-7895625-640.jpg');
     --noColor: rgba(255, 255, 255, 0);
+
+    /* contact form button */
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(22, 124, 149);
+    --btn-bg-2: rgb(252, 252, 252);
+    --btn-bg-color: hsla(360 100% 100% / 1);
 }
+
 
 #topHomePage{
     min-height: 100vh;
@@ -102,6 +109,11 @@ body{
    width: 400px;
    border-radius: 50%;
    border: 5px solid var(--logoGradient);
+   filter: grayscale(70%);
+}
+
+#img{
+  filter: grayscale(100%);
 }
 
 .btn-about{
@@ -358,7 +370,6 @@ body{
     background-repeat: no-repeat;
   }
 
-
   .project-img-logo{
     width: 50px;
     display: flex;
@@ -386,7 +397,14 @@ body{
     background-color: var(--black);
     height: 300px;
     width: 350px;
+    /* object-fit: contain; */
     border-radius: 20px;
+    filter: blur(4px);
+  }
+
+  .projects-sc:hover{
+    transition: 0.7s ease-in;
+    filter: blur(0px);
   }
 
   .btn-view{
@@ -411,4 +429,71 @@ body{
 
 
   /* Start of contact page */
+
+  .btn-btn{
+    cursor: pointer;
+    padding: 0.9em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(5, 218, 237, 0.413), 0px 5px 5px -1px rgba(79, 99, 132, 0.25), inset 4px 4px 8px rgba(31, 28, 0, 0.5), inset -4px -4px 8px rgba(20, 34, 225, 0.719);
+  }
+  
+  #contactIconOne, #contactIconTwo, #contactIconThree, #contactIconFour, #contactIconFive{
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    height: 30px;
+    transition: 0.8s;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+  #contactIconOne:hover{
+    transform: rotateZ(360deg);
+  }
+  #contactIconTwo:hover{
+    transform: rotateZ(360deg);
+  }
+  #contactIconThree:hover{
+    transform: rotateZ(360deg);
+  }
+  #contactIconFour:hover{
+    transform: rotateZ(360deg);
+  }
+  #contactIconFive:hover{
+    transform: rotateZ(360deg);
+  }
+  
+  .btn-btn:hover{
+    background-position: right top;
+  }
+  
+  .btn-btn:is(:focus, :focus-visible, :active){
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-btn{
+        transition: linear;
+    }
+    .nav-link1{
+        transition: linear;
+    }
+  }
+  
   /* End of contact page */
+
+  /* media queries */
+
+  /* @media (max-width: 798px) {
+    .nav-container{
+      display: none;
+    }
+  } */
