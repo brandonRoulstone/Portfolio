@@ -6,17 +6,13 @@
 }
 
 body{
-    background-image: var(--bg-image);
-    background-size: cover;
-    background-repeat: no-repeat;
-    image-rendering: optimizeQuality;
-    image-resolution: 1000px;
+
 }
 
 :root{
     --black: black;
     --white: white;
-    --bg-image: url('https://i.postimg.cc/2509mFMT/coffee-839233-640.jpg');
+    --bg-image: url('https://i.postimg.cc/L8WtBY59/background-4852316-640.jpg');
     --transparentBlack1: rgba(0, 0, 0, 0.48);
     --transparentBlack2: rgba(0, 0, 0, 0.593);
     --transparentWhite: rgba(255, 255, 255, 0.147);
@@ -26,17 +22,25 @@ body{
     --darkBlue:rgb(3, 3, 74);
     --NavColor: rgb(0, 110, 255);
     --BnW:radial-gradient(circle, white  0%,  black 100%);
+    --testimonials_bgImg: url('https://i.postimg.cc/Tw1qrVq3/istockphoto-1273852653-612x612.jpg');
     --ProjectsBgImg: url('https://i.postimg.cc/FFG4N1mZ/holes-7895625-640.jpg');
+    --noColor: rgba(255, 255, 255, 0);
 }
 
 #topHomePage{
     min-height: 100vh;
     position: relative;
-    width: 100%;
+    width: 100%;    
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    image-resolution: 9000px;
 }
 
 #aboutPage{
     min-height: 100vh;
+    background-color: var(--black);
 }
 
 /* links */
@@ -93,10 +97,11 @@ body{
 }
 
 .img-img{
-    height: 400px;
-    width: 375px;
-    border-radius: 50%;
-    border: 5px solid var(--logoGradient);
+   background-image: url('https://i.postimg.cc/26wyDL97/20231009-135619.jpg');
+   height: 400px;
+   width: 400px;
+   border-radius: 50%;
+   border: 5px solid var(--logoGradient);
 }
 
 .btn-about{
@@ -116,7 +121,7 @@ body{
 
 /* Nav features */
 .nav-container{
-    transform: translateY(-210px);
+    transform: translateY(-275px);
     position: fixed;
     perspective: 1000px;
 }
@@ -214,14 +219,40 @@ body{
   /* testimonials section */
 
   #testimonials{
-    /* background-image: var(--bg-image);
-    background-size: contain;
-    background-repeat: no-repeat; */
-    min-height: 50vh;
-    max-width: 100%;
-    /* image-rendering: optimizeQuality;
-    image-resolution: 1000px; */
+    background-image: var(--testimonials_bgImg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
   }
+
+  #testimonialOne, #testimonialFour, #testimonialSeven{
+    padding: 50px;
+    z-index: 1;
+    box-shadow: 2px 2px 10px 10px rgba(41, 40, 40, 0.514);
+  }
+
+  #testimonialTwo,#testimonialFive,#testimonialEight{
+    padding: 50px;
+    transform: translateX(-170px);
+  }
+
+  #testimonialTwo:hover{
+    transition: 0.8s;
+    transform: translateX(10px);
+    box-shadow: 10px 5px 10px 10px rgba(41, 40, 40, 0.514);
+  }
+  
+  #testimonialFive:hover{
+    transition: 0.8s;
+    transform: translateX(10px);
+  }
+
+  #testimonialEight:hover{
+    transition: 0.8s;
+    transform: translateX(10px);
+  }
+
+  /* , #testimonialTwo, #testimonialThree, #testimonialFour, #testimonialFive, #testimonialSix, #testimonialSeven, #testimonialEight, #testimonialNine */
+
   .intro{
     display: flex;
     justify-content: center;
@@ -319,17 +350,29 @@ body{
 
   /* Start of projects page */
   #myProjects{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     background-image: var(--ProjectsBgImg);
-    /* background-repeat: no-repeat;
-    background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .project-img-logo{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pro-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .project-container{
-    margin-left: 65px;
     background-color: var(--transparentWhite);
-    margin: 5px;
+    margin: 20px;
     border-radius: 20px;
     padding: 20px;
   }
@@ -361,7 +404,7 @@ body{
     text-shadow: 6px 5px var(--transparentBlack2);
     font-size: 17px;
     box-shadow: 10px 0px 10px 10px rgba(41, 40, 40, 0.514);
-    transform: rotateY(40deg);
+    transform: rotateY(20deg);
     background: radial-gradient(circle, var(--logoGradient) 50%,  var(--transparentWhite) 100%);
   }
   /* End of projects page */
