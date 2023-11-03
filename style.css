@@ -45,6 +45,37 @@ body{
     image-resolution: 9000px;
 }
 
+
+/* type effect */
+#abth3{
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+  animation: typing 5s steps(18), cursor .4s step-end infinite alternate;
+  color: var(--white);
+}
+
+@keyframes cursor{
+  50% { border-color: transparent;}
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    height: 45px;
+  }
+  10% {
+    width: 0;
+    height: 45px;
+  }
+  100% {
+    width: 100%;
+    height: 45px;
+  }
+}
+
 #aboutPage{
     min-height: 100vh;
     background-color: var(--black);
@@ -108,7 +139,7 @@ body{
    width: 300px;
    border-radius: 40px;
    border: 5px solid var(--logoGradient);
-   filter: grayscale(70%);
+   filter: grayscale(1%);
 }
 
 #img{
@@ -246,10 +277,19 @@ body{
 
   /* testimonials section */
 
+  #Img_img, #Img_img-2, #Img_img-3, #Img_img-4{
+    height: 150px;
+    width: 170px;
+  }
+
+
   #testimonials{
     background-image: var(--testimonials_bgImg);
     /* background-repeat: no-repeat;
     background-size: cover; */
+  }
+  #testimonialOne, #testimonialFour,#testimonialSeven{
+    margin-left: 270px;
   }
 
   #testimonialOne, #testimonialFour, #testimonialSeven{
@@ -258,9 +298,9 @@ body{
     box-shadow: 2px 2px 10px 10px rgba(41, 40, 40, 0.514);
   }
 
-  #testimonialTwo,#testimonialFive,#testimonialEight{
+  #testimonialTwo,#testimonialFive{
     padding: 50px;
-    transform: translateX(-170px);
+    transform: translateX(-470px);
   }
 
   #testimonialTwo:hover{
@@ -503,13 +543,52 @@ body{
         transition: linear;
     }
   }
+
+  #navPhone{
+    display: none;
+  }
   
   /* End of contact page */
 
   /* media queries */
 
-  /* @media (max-width: 798px) {
+  @media (max-width:1080px) {
+  }
+  @media (max-width: 720px) {
+    *{
+      font-size: 15px;
+    }
+    #navPhone{
+      display: flex;
+    }
     .nav-container{
       display: none;
     }
-  } */
+    #greeting{
+      transform: translateY(90px);
+      color: var(--white);
+      position: relative;
+      transition: 1s ease-in-out;
+  }
+  
+  .list-lst{
+      margin-right: 10px;
+      list-style: none;
+  }
+  
+  .img-img{
+     height: 170px;
+     width: 180px;
+     border-radius: 40px;
+     border: 5px solid var(--logoGradient);
+     filter: grayscale(1%);
+  }
+  .fs-2{
+    font-size: 10px;
+  }
+  }
+  @media (max-width: 300px) {
+    .nav-container{
+      display: none;
+    }
+  }
