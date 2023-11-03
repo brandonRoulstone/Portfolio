@@ -10,61 +10,6 @@
   </head>
   <body>
     <div id="topHomePage">
-
-
-      <!-- <div class="nav-btn">
-        <button class="btn rounded-0"
-        style="background: var(--red);" 
-              type="button" 
-              data-bs-toggle="offcanvas" 
-              data-bs-target="#offcanvasId">
-              <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
-      </button> 
-      <div class="offcanvas offcanvas-start" 
-          id="offcanvasId"> 
-          <div class="offcanvas-header" style="background-color: var(--red);"> 
-            <img src="https://megaone.acrothemes.com/product-hotspot/images/logo.png" alt="">
-              <button type="button" 
-                      class="text-reset btn-close" 
-                      data-bs-dismiss="offcanvas"> 
-              </button> 
-          </div> 
-          <div class="offcanvas-body" style="background-color: var(--red);"> 
-            <div class="nav-item">
-                <a class="nav-link active text-center text-white text-decoration-underline fs-3" aria-current="page" href="#">Home</a>
-              </div>
-              <br>
-              <div class="nav-item">
-                <a class="nav-link text-center text-white fs-3" href="#">Products</a>
-              </div>
-              <br>
-              <div class="nav-item">
-                <a class="nav-link text-center text-white fs-3" href="#">Reviews</a>
-              </div>
-              <br>
-              <div class="nav-item">
-                <a class="nav-link text-center text-white fs-3" href="#">Contact</a>
-              </div>
-          </div> 
-      </div>
-    </div> -->
-
-    <div class="container" id="navPhone">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Simple header</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
-    </div>
         
         <div class="d-flex justify-content-center" id="greeting">
 
@@ -86,16 +31,17 @@
             <ul class="list-lst">
               <li><h2 id="abth3">Hi, I am <span class="border-bottom border-white border-2">Brandon Roulstone</span></h2></li>
               <li class="fs-2">Student at:</li>
-              <a href="https://lifechoices.co.za/"><li><img src="https://i.postimg.cc/RZGwGy8M/logo-429x991-262x60.png" alt="Img_Brandon"></li></a>
+              <a href="https://lifechoices.co.za/"><li><img src="https://i.postimg.cc/RZGwGy8M/logo-429x991-262x60.png" alt="Img_Brandon" class="life-choices-img"></li></a>
               <li class="fs-2">Aspiring full-stack developer</li>
               <div class="d-flex justify-content-center">
-                <a href="#aboutPage"><button class="btn-btn">More about me</button></a>
+                <a href="#aboutPage"><button class="btn-btn">More</button></a>
               </div>
             </ul>
           <div class="img-intro">
             <img src="https://i.postimg.cc/WbpD3WfZ/20231103-075902.jpg" alt="" class="img-img">
           </div>
         </div>
+        <!-- +++++End of Media queries code++++ -->
         
         <!-- Navbar -->
         <nav>
@@ -121,6 +67,7 @@
 
         </nav>
     </div>
+  
 
     <div id="aboutPage">
 
@@ -138,19 +85,16 @@
 
             <h1 class="display-4 fw-bold text-white lh-1 mb-3 text-center">About Me</h1>
 
-            <p class="lead text-white">Hello, I'm Brandon Roulstone, a 20-year-old individual with a relentless commitment to excellence and a passion for pushing my boundaries. From a young age, I've fostered an exceptional work ethic that has been a driving force behind my journey in both academics and extracurricular activities.
+            <p class="lead text-white" id="txtAbout">Hello, I'm Brandon Roulstone, a 20-year-old individual with a relentless commitment to excellence and a passion for pushing my boundaries. From a young age, I've fostered an exceptional work ethic that has been a driving force behind my journey in both academics and extracurricular activities.
 
               One of the key aspects of my life has been my pursuit of excellence in every endeavor I undertake. Whether it's in my academic studies, sports, or any other pursuit, I firmly believe in giving it my all. When I set my focus on a task, I'm dedicated and driven to achieve outstanding results. My determination to excel has enabled me to consistently stand out and deliver my best.
               
               In addition to my commitment to excellence, I have a deep-seated passion for sports. From a young age, I actively participated in various sports, and this dedication to athleticism has not only honed my physical abilities but also instilled in me valuable life skills like discipline, teamwork, and perseverance.
               </p>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
 
               <a href="#programmingExp"><button class="btn-about">Experience</button></a>
               <a href="#Education"><button class="btn-about">Education</button></a>
-
-            </div>
 
           </div>
           
@@ -269,49 +213,52 @@
       </div>
     </div>
 
+
     
     <div id="testimonials">
       <div class="intro">
         <h2 class="h2-txt">Testimonials</h2>
       </div>
       <!-- Row one -->
-      <div class="d-flex justify-content-center">
-        <div class="row">
-          <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialOne">
-            <div class="d-flex justify-content-center">
-              <img src="https://i.postimg.cc/2jg9xcVB/joel2.jpg" title="Lecturer" alt="joel2" id="Img_img">
+      <div id="testimonialChild">
+        <div class="d-flex justify-content-center">
+          <div class="row">
+            <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialOne">
+              <div class="d-flex justify-content-center">
+                <img src="https://i.postimg.cc/2jg9xcVB/joel2.jpg" title="Lecturer" alt="joel2" id="Img_img">
+              </div>
+              <h2 class="fw-normal text-center text-black">Joel Mukanya</h2>
+              <p class="text-center text-black" id="testimonialOneTxt">Brandon is a creative, talented, and well-behaved individual who always prioritizes his work. He excels in collaborating with others and has gained proficiency in HTML5, CSS, and Bootstrap. Including Git and GitHub.</p>
             </div>
-            <h2 class="fw-normal text-center text-black">Joel Mukanya</h2>
-            <p class="text-center text-black">Brandon is a creative, talented, and well-behaved individual who always prioritizes his work. He excels in collaborating with others and has gained proficiency in HTML5, CSS, and Bootstrap. Including Git and GitHub.</p>
-          </div>
-
-          <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialTwo">
-            <div class="d-flex justify-content-center">
-              <img src="https://i.postimg.cc/65NgXbtx/IMG-20221026-WA0001.jpg" alt="Tauha_Shaik" title="Tauha_Shaik" id="Img_img-2">
+  
+            <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialTwo">
+              <div class="d-flex justify-content-center">
+                <img src="https://i.postimg.cc/65NgXbtx/IMG-20221026-WA0001.jpg" alt="Tauha_Shaik" title="Tauha_Shaik" id="Img_img-2">
+              </div>
+              <h2 class="fw-normal text-center text-black">Tauha Shaik</h2>
+              <p class="text-center text-black">Brandon Roulstone is an exceptional individual in both work ethic and character. His skills are proficient and expertly executed and his projects are a true display of this. His hard work and dedication is a result of his drive and passion for coding and he will be a great asset to all those around him.</p>
             </div>
-            <h2 class="fw-normal text-center text-black">Tauha Shaik</h2>
-            <p class="text-center text-black">Brandon Roulstone is an exceptional individual in both work ethic and character. His skills are proficient and expertly executed and his projects are a true display of this. His hard work and dedication is a result of his drive and passion for coding and he will be a great asset to all those around him.</p>
           </div>
         </div>
-      </div>
-
-      <!-- row two -->
-      <div class="d-flex justify-content-center">
-        <div class="row m-4">
-          <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialFour">
-            <div class="d-flex justify-content-center">
-              <img src="https://i.postimg.cc/nzygSpnN/IMG-20211025-134530-422.jpg" title="Damon_Raffels" alt="Damon_Raffels" id="Img_img-3">
+  
+        <!-- row two -->
+        <div class="d-flex justify-content-center">
+          <div class="row m-4">
+            <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialFour">
+              <div class="d-flex justify-content-center">
+                <img src="https://i.postimg.cc/nzygSpnN/IMG-20211025-134530-422.jpg" title="Damon_Raffels" alt="Damon_Raffels" id="Img_img-3">
+              </div>
+              <h2 class="fw-normal text-center text-black">Damon Raffels</h2>
+              <p class="text-center text-black">Brandon is an extremely dedicated worker, giving his all to every project, task and most importantly, to himself; always improving his skills and growing his knowledge. He works well with others, always willing to listen and see others' perspectives on topics and issues. He has a humbling amount of knowledge of his field of work and has a great presence. I am proud to call him a colleague and a friend</p>
             </div>
-            <h2 class="fw-normal text-center text-black">Damon Raffels</h2>
-            <p class="text-center text-black">Brandon is an extremely dedicated worker, giving his all to every project, task and most importantly, to himself; always improving his skills and growing his knowledge. He works well with others, always willing to listen and see others' perspectives on topics and issues. He has a humbling amount of knowledge of his field of work and has a great presence. I am proud to call him a colleague and a friend</p>
-          </div>
-
-          <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialFive">
-            <div class="d-flex justify-content-center">
-              <img src="https://i.postimg.cc/Hkkk0DBT/IMG-20231031-070042.jpg" title="Khwezilomso Mbobo" alt="Khwezilomso Mbobo" id="Img_img-4">
+  
+            <div class="col-lg-4 bg-body-secondary border rounded-3" id="testimonialFive">
+              <div class="d-flex justify-content-center">
+                <img src="https://i.postimg.cc/Hkkk0DBT/IMG-20231031-070042.jpg" title="Khwezilomso Mbobo" alt="Khwezilomso Mbobo" id="Img_img-4">
+              </div>
+              <h2 class="fw-normal text-center text-black">Khwezilomso Mbobo</h2>
+              <p class="text-center text-black">Brandon is the most knowledgeable person I've ever known in the field of coding. An exception a talent with a one of a kind personality. His friendly character and cheerful spirit uplift all those lucky enough to be around him as he is always ready to help where ever he can</p>
             </div>
-            <h2 class="fw-normal text-center text-black">Khwezilomso Mbobo</h2>
-            <p class="text-center text-black">Brandon is the most knowledgeable person I've ever known in the field of coding. An exception a talent with a one of a kind personality. His friendly character and cheerful spirit uplift all those lucky enough to be around him as he is always ready to help where ever he can</p>
           </div>
         </div>
       </div>
@@ -322,11 +269,11 @@
         type="button" 
         data-bs-toggle="offcanvas" 
         data-bs-target="#offcanvasId">
-        <i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>
+        <i class="fa-solid fa-plus fa-lg"></i>
         </button>
        <div class="offcanvas offcanvas-start" 
           id="offcanvasId"> 
-          <div class="offcanvas-header" style="background:var(--BnW);"> 
+          <div class="offcanvas-header"> 
             <i class="fa-solid fa-b fa-2xl" style="color: #ffffff;"></i><p class="text-uppercase text-bg-dark rounded-3">Add Something..</p>
               <button type="button" 
                       class="text-reset btn-close" 
@@ -431,7 +378,10 @@
           <div class="row align-items-center g-lg-5 py-5">
             <div class="col-lg-7 text-center text-lg-start">
               <h1 class="display-4 fw-bold lh-1 mb-3 text-white text-center">Contact me</h1>
-              <div class="col-lg-10 fs-4 justify-content-center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52892.39222951195!2d18.422774425662134!3d-34.04965474925542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc42487d210221%3A0x356e4d40be6f15d2!2sDiep%20River%2C%20Cape%20Town!5e0!3m2!1sen!2sza!4v1698929121781!5m2!1sen!2sza" width="550" height="350" style="border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <div class="d-flex justify-content-evenly">
+                <a href=""><i class="fa-brands fa-linkedin-in fa-lg" id="contactIconThree" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-github fa-lg" id="contactIconFour" style="color: #ffffff;"></i></a>
+              </div>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
               <form action="https://formspree.io/f/mrgwrvoq" method="post" class="p-4 p-md-5 border rounded-4" id="formBody">
@@ -451,18 +401,15 @@
                   <button class="btn-btn" type="submit">Contact Brandon</button>
                 </div>
                 <hr class="my-4">
-                <div class="d-flex justify-content-evenly">
-                  <a href=""><i class="fa-brands fa-facebook-f fa-lg" id="contactIconOne" style="color: #f5f5f5;"></i></a>
-                  <a href=""><i class="fa-brands fa-instagram fa-lg" id="contactIconTwo" style="color: #ffffff;"></i></a>
-                  <a href=""><i class="fa-brands fa-linkedin-in fa-lg" id="contactIconThree" style="color: #ffffff;"></i></a>
-                  <a href=""><i class="fa-brands fa-github fa-lg" id="contactIconFour" style="color: #ffffff;"></i></a>
-                  <a href=""><i class="fa-brands fa-twitter fa-lg" id="contactIconFive" style="color: #ffffff;"></i></a>
-                </div>
               </form>
             </div>
           </div>
         </div>
+        <footer class="text-white text-center border-top">
+         Brandon Roulstone @2023 &copy;
+        </footer>
       </div>
+
 
 
       <!-- (media queries) code will show for specific screen sizes -->
