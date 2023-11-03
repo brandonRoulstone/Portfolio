@@ -283,56 +283,60 @@ body{
   #Img_img, #Img_img-2, #Img_img-3, #Img_img-4{
     height: 150px;
     width: 170px;
+    margin-top: 10px;
+    border-radius: 10px;
   }
 
 
-  #testimonials{
+  #bottomSection{
     background-image: var(--testimonials_bgImg);
     /* background-repeat: no-repeat;
     background-size: cover; */
     image-rendering: optimizeQuality;
-  }
-  #testimonialOne, #testimonialFour,#testimonialSeven{
-    margin-left: 270px;
+    min-height: 100vh;
+
   }
 
-  #testimonialOne, #testimonialFour, #testimonialSeven{
-    padding: 50px;
-    z-index: 1;
-    box-shadow: 2px 2px 10px 10px rgba(41, 40, 40, 0.514);
-  }
 
-  #testimonialTwo,#testimonialFive{
-    padding: 50px;
-    transform: translateX(-470px);
-  }
-
-  #testimonialTwo:hover{
-    transition: 0.8s;
-    transform: translateX(10px);
-    box-shadow: 10px 5px 10px 10px rgba(41, 40, 40, 0.514);
-  }
-  
-  #testimonialFive:hover{
-    transition: 0.8s;
-    transform: translateX(10px);
-  }
-
-  #testimonialEight:hover{
-    transition: 0.8s;
-    transform: translateX(10px);
-  }
-
-  /* , #testimonialTwo, #testimonialThree, #testimonialFour, #testimonialFive, #testimonialSix, #testimonialSeven, #testimonialEight, #testimonialNine */
 
   .intro{
     display: flex;
     justify-content: center;
   }
 
-  .h2-txt{
+  /* .--testimonial{
+    transform: translateX(500px);
+  } */
+
+  #testimonialsSection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--black);
+    min-height: 100vh;
+    width: 100%;   
+  }
+
+  .person-id{
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    margin-left: 40px;
+  }
+
+  .img-profile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .person-name{
+    text-align: center;
     color: var(--white);
-    font-size: 60px;
+  }
+
+  .txt{
+    text-align: center;
+    color: var(--white);
+    margin-left: 20px;
+    padding: 5px;
   }
 
   #IconSocialOne, #IconSocialTwo, #IconSocialThree, #IconSocialFour{
@@ -444,6 +448,11 @@ body{
   .project-container{
     background-color: var(--transparentWhite);
     border-radius: 20px;
+    margin: 10px;
+  }
+
+  .classTestimonials{
+    justify-content: center;
   }
 
   .image{
@@ -457,6 +466,7 @@ body{
     width: 350px;
     /* object-fit: contain; */
     border-radius: 20px;
+    margin: 10px;
   }
 
   .projects-sc:hover{
@@ -508,6 +518,10 @@ body{
     padding: 20px;
     border-radius: 50%;
     margin: 5px;
+  }
+
+  #contactMe{
+    min-height: 50vh;
   }
   
   #contactIconOne:hover{
