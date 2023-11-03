@@ -42,7 +42,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     image-rendering: optimizeQuality;
-    image-resolution: 9000px;
 }
 
 
@@ -127,6 +126,10 @@ body{
     color: var(--white);
     position: relative;
     transition: 1s ease-in-out;
+}
+
+.life-choices-img{
+  width: 100px;
 }
 
 .list-lst{
@@ -287,6 +290,7 @@ body{
     background-image: var(--testimonials_bgImg);
     /* background-repeat: no-repeat;
     background-size: cover; */
+    image-rendering: optimizeQuality;
   }
   #testimonialOne, #testimonialFour,#testimonialSeven{
     margin-left: 270px;
@@ -439,9 +443,7 @@ body{
 
   .project-container{
     background-color: var(--transparentWhite);
-    margin: 20px;
     border-radius: 20px;
-    padding: 20px;
   }
 
   .image{
@@ -455,12 +457,10 @@ body{
     width: 350px;
     /* object-fit: contain; */
     border-radius: 20px;
-    filter: blur(4px);
   }
 
   .projects-sc:hover{
     transition: 0.7s ease-in;
-    filter: blur(0px);
   }
 
   .btn-view{
@@ -544,51 +544,24 @@ body{
     }
   }
 
-  #navPhone{
-    display: none;
+  @media (max-width: 778px) {
+    
+    .pro-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 20px;
+    }
   }
-  
+
+  @media (max-width: 768px) {
+    #testimonialOne, #testimonialFour, #testimonialSeven {
+        margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+
+    #testimonialTwo, #testimonialFive {
+        transform: translateX(0px); /* Adjust the translation for smaller screens */
+    }
+}
   /* End of contact page */
 
   /* media queries */
-
-  @media (max-width:1080px) {
-  }
-  @media (max-width: 720px) {
-    *{
-      font-size: 15px;
-    }
-    #navPhone{
-      display: flex;
-    }
-    .nav-container{
-      display: none;
-    }
-    #greeting{
-      transform: translateY(90px);
-      color: var(--white);
-      position: relative;
-      transition: 1s ease-in-out;
-  }
-  
-  .list-lst{
-      margin-right: 10px;
-      list-style: none;
-  }
-  
-  .img-img{
-     height: 170px;
-     width: 180px;
-     border-radius: 40px;
-     border: 5px solid var(--logoGradient);
-     filter: grayscale(1%);
-  }
-  .fs-2{
-    font-size: 10px;
-  }
-  }
-  @media (max-width: 300px) {
-    .nav-container{
-      display: none;
-    }
-  }
