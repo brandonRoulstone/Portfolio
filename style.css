@@ -125,8 +125,12 @@ body{
     transform: translateY(90px);
     color: var(--white);
     position: relative;
-    transition: 1s ease-in-out;
+    background-color: var(--transparentBlack1);
+    margin-left: 35px;
+    border-radius: 30px;
+    padding: 10px;
 }
+
 
 .intro-txt{
   font-size: 1.5em;
